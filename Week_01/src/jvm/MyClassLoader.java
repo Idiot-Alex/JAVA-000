@@ -1,4 +1,4 @@
-package class_work;
+package jvm;
 
 import java.io.*;
 import java.lang.reflect.InvocationTargetException;
