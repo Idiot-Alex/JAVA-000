@@ -2,8 +2,7 @@
 
 下面是几种常用的垃圾回收器在不同堆大小的情况下，统计出的垃圾回收次数表格
 
-[JVM 垃圾回收器表格](https://www.yuque.com/hotstrip11/tev6bm/hbobe2?inner=JCYe7)
-![JVM 垃圾回收器表格](https://www.yuque.com/hotstrip11/tev6bm/hbobe2?inner=JCYe7)
+![JVM 垃圾回收器表格](https://github.com/Idiot-Alex/JAVA-000/blob/main/Week_02/src/jvm/0.png?raw=true)
 
 从表格里可以看出不同 GC 在 1000 毫秒内生成的对象数差距不大，为了减少变量的影响，重复执行了多次取近似值的方式进行统计。
 
