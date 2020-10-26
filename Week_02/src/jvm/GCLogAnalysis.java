@@ -11,6 +11,12 @@ import java.util.concurrent.atomic.LongAdder;
  * +UseG1Gc 表示使用 G1 GC
  * -Xloggc:xxx.log 表示输出到指定文件
  * java -XX:+UseSerialGC -Xmx512m -Xms512m -Xloggc:gc.serial.log -XX:+PrintGCDetails -XX:+PrintGCDateStamps GCLogAnalysis
+ *
+ * 测试使用的指令，方便复制：
+ * java -XX:+UseSerialGC -Xmx512m -Xms512m -XX:+PrintGCDateStamps -XX:+PrintGCDetails -Xloggc:serial.log GCLogAnalysis
+ * java -XX:+UseParallelGC -Xmx512m -Xms512m -XX:+PrintGCDateStamps -XX:+PrintGCDetails -Xloggc:parallel.log GCLogAnalysis
+ * java -XX:+UseConcMarkSweepGC -Xmx512m -Xms512m -XX:+PrintGCDateStamps -XX:+PrintGCDetails -Xloggc:cms.log GCLogAnalysis
+ * java -XX:+UseG1GC -Xmx512m -Xms512m -XX:+PrintGCDateStamps -XX:+PrintGCDetails -Xloggc:g1.log GCLogAnalysis
 */
 public class GCLogAnalysis {
     private static Random random = new Random();
