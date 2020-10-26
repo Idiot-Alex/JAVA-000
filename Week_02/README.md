@@ -11,6 +11,10 @@
 > 可以直接访问下面的链接查看完整信息
 > https://www.yuque.com/hotstrip11/tev6bm/hbobe2
 
+[分析图 1](https://github.com/Idiot-Alex/JAVA-000/blob/main/Week_02/src/jvm/1.png?raw=true)
+[分析图 2](https://github.com/Idiot-Alex/JAVA-000/blob/main/Week_02/src/jvm/2.png?raw=true)
+[分析图 3](https://github.com/Idiot-Alex/JAVA-000/blob/main/Week_02/src/jvm/3.png?raw=true)
+
 可以明显的看出，在内存比较小的情况下，并行的 GC （Parallel GC 和 CMS GC）可能还不如串行的 GC。
 
 而并行的 GC 在相同内存大小情况下，CMS GC 会比 Parallel GC 表现的更好一点。
