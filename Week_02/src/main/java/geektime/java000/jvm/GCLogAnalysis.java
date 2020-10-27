@@ -1,4 +1,4 @@
-package jvm;
+package geektime.java000.jvm;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.LongAdder;

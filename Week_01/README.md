@@ -12,9 +12,9 @@ JVM 的重点在于 JVM 的内存模型和垃圾回收机制。
 
 # 实践
 
-反编译 jvm.Demo 类获取到字节码内容，简单了解字节码构成。
+反编译 geektime.java000.geektime.java000.jvm.Demo 类获取到字节码内容，简单了解字节码构成。
 
-自定义类加载器加载 Hello.xlass 文件，并且执行该文件里面的 hello 方法，详情见 ./src/main/java/jvm/MyClassLoader.java 文件
+自定义类加载器加载 Hello.xlass 文件，并且执行该文件里面的 hello 方法，详情见 ./src/main/java/geektime.java000.geektime.java000.jvm/MyClassLoader.java 文件
 
 了解 JVM 参数对 JVM 内存模型的关系，画出对应的关系图，详情见 ./src/main/resources/ 目录里面的图片
 

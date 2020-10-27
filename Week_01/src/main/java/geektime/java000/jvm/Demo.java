@@ -1,4 +1,4 @@
-package jvm;
+package geektime.java000.jvm;
 
 public class Demo {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package netty;
+package geektime.java000.netty;
 
 import java.io.IOException;
 import java.io.PrintWriter;

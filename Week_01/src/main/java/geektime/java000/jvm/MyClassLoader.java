@@ -1,4 +1,4 @@
-package jvm;
+package geektime.java000.jvm;
 
 import java.io.*;
 import java.lang.reflect.InvocationTargetException;
