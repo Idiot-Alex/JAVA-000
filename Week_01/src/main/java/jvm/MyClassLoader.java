@@ -20,7 +20,7 @@ public class MyClassLoader extends ClassLoader {
      */
     @Override
     protected Class<?> findClass(String name) throws ClassNotFoundException {
-        String filePath = this.getClass().getResource("").getPath() + CLASS_NAME;
+        String filePath = this.getClass().getResource("/").getPath() + CLASS_NAME;
         File file = new File(filePath);
         byte[] bytes = new byte[(int) file.length()];
         BufferedInputStream bufferedInputStream = null;

@@ -2,7 +2,7 @@
 
 下面是几种常用的垃圾回收器在不同堆大小的情况下，统计出的垃圾回收次数表格
 
-![JVM 垃圾回收器表格](https://github.com/Idiot-Alex/JAVA-000/blob/main/Week_02/src/jvm/images/0.png?raw=true)
+![JVM 垃圾回收器表格](https://github.com/Idiot-Alex/JAVA-000/blob/main/Week_02/src/main/resource/images/0.png?raw=true)
 
 从表格里可以看出不同 GC 在 1000 毫秒内生成的对象数差距不大，为了减少变量的影响，重复执行了多次取近似值的方式进行统计。
 
@@ -11,9 +11,9 @@
 > 可以直接访问下面的链接查看完整信息
 > https://www.yuque.com/hotstrip11/tev6bm/hbobe2
 
-![分析图 1](https://github.com/Idiot-Alex/JAVA-000/blob/main/Week_02/src/jvm/images/1.png?raw=true)
-![分析图 2](https://github.com/Idiot-Alex/JAVA-000/blob/main/Week_02/src/jvm/images/2.png?raw=true)
-![分析图 3](https://github.com/Idiot-Alex/JAVA-000/blob/main/Week_02/src/jvm/images/3.png?raw=true)
+![分析图 1](https://github.com/Idiot-Alex/JAVA-000/blob/main/Week_02/src/main/resource/images/1.png?raw=true)
+![分析图 2](https://github.com/Idiot-Alex/JAVA-000/blob/main/Week_02/src/main/resource/images/2.png?raw=true)
+![分析图 3](https://github.com/Idiot-Alex/JAVA-000/blob/main/Week_02/src/main/resource/images/3.png?raw=true)
 
 可以明显的看出，在内存比较小的情况下，并行的 GC （Parallel GC 和 CMS GC）可能还不如串行的 GC。
 
