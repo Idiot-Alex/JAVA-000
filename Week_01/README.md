@@ -18,6 +18,6 @@ JVM 的重点在于 JVM 的内存模型和垃圾回收机制。
 
 了解 JVM 参数对 JVM 内存模型的关系，画出对应的关系图，详情见 ./src/main/resources/ 目录里面的图片
 
-![JVM 参数图](https://github.com/Idiot-Alex/JAVA-000/blob/main/Week_01/src/main/resources/images/JVM-args.png?raw=true)
+![JVM 参数图](https://github.com/Idiot-Alex/JAVA-000/blob/main/Week_01/src/main/resources/JVM-args.png?raw=true)
 
 
