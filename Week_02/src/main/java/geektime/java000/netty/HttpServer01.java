@@ -24,11 +24,13 @@ public class HttpServer01 {
         try {
             Thread.sleep(20);
             // 输出 Hello World
+            String body = "Hello World";
             PrintWriter printWriter = new PrintWriter(socket.getOutputStream(), true);
             printWriter.println("HTTP/1.1 200 OK");
             printWriter.println("Content-Type:text/html;charset=utf-8");
+            printWriter.println("Content-Length:" + body.getBytes().length);
             printWriter.println();
-            printWriter.write("Hello World");
+            printWriter.write(body);
             printWriter.close();
             socket.close();
         } catch (InterruptedException e) {
