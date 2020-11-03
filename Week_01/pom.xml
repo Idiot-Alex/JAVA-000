@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>geektime</groupId>
-    <artifactId>java000</artifactId>
+    <artifactId>week1</artifactId>
     <version>0.0.1</version>
 
     <dependencies>
