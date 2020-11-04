@@ -1,5 +1,6 @@
 package geektime.netty.inbound;
 
+import geektime.netty.filter.MyFilter;
 import geektime.netty.http.MyHttpClient;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
@@ -8,12 +9,20 @@ import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
 import io.netty.handler.codec.http.*;
 import io.netty.util.CharsetUtil;
+import okhttp3.Headers;
 import okhttp3.Response;
 
 /**
  *
  */
-public class HttpServerHandler extends SimpleChannelInboundHandler<FullHttpRequest> {
+public class HttpServerFilterHandler extends SimpleChannelInboundHandler<FullHttpRequest> {
+
+    private MyFilter myFilter;
+
+    public HttpServerFilterHandler(MyFilter myFilter) {
+        this.myFilter = myFilter;
+    }
+
 
     @Override
     protected void channelRead0(ChannelHandlerContext ctx, FullHttpRequest request) throws Exception {
@@ -21,8 +30,11 @@ public class HttpServerHandler extends SimpleChannelInboundHandler<FullHttpReque
         // 组装新的请求，传递参数
         System.out.println("uri: " + request.uri());
         String url = "http://localhost:8801" + request.uri();
+
         MyHttpClient client = new MyHttpClient();
-        Response response = client.doHttpRequest(url);
+        // 设置 请求头
+        Headers headers = myFilter.doFilter();
+        Response response = client.doHttpRequest(url, headers);
 
         String body = response.body().string();
         System.out.println("body: " + body);

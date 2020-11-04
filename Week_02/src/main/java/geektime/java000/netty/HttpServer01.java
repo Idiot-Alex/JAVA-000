@@ -17,6 +17,7 @@ public class HttpServer01 {
         while (true) {
             Socket socket = serverSocket.accept();
             doService(socket);
+            System.out.println("received a new request...");
         }
     }
 
