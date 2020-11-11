@@ -11,3 +11,8 @@
 3. 使用 CountDownLatch 和 CyclicBarrier 这样的线程间通信的类来处理，这样代码比较简单，逻辑清晰；但是需要明白这些类的作用和适用范围。
 
 4. 使用线程的返回值来处理，比如 Future 相关的类，也就是异步执行，在合适的时候取得返回值。这样的代码最简洁美观，更符合人的思维逻辑。
+
+
+### 线程&并发图
+
+![](https://github.com/Idiot-Alex/JAVA-000/blob/main/Week_04/src/main/resources/%E5%A4%9A%E7%BA%BF%E7%A8%8B%20&%20%E5%B9%B6%E5%8F%91.png?raw=true)
