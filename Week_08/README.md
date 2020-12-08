@@ -2,6 +2,8 @@
 
 ### 设计对前面的订单表数据进行水平分库分表，拆分2个库，每个库16张表并在新结构在演示常见的增删改查操作
 
+[源码地址：](https://github.com/Idiot-Alex/JAVA-000/tree/main/week08_work1) https://github.com/Idiot-Alex/JAVA-000/tree/main/week08_work1
+
 借助 ShardingSphere-Proxy 中间件完成分库分表，这个就相当于是个数据库代理，
 换句话说可以通过连接数据库的方式去连接 ShardingSphere-Proxy。
 具体步骤如下：
